@@ -1,0 +1,29 @@
+#1) Implemente um algoritmo para trocar o conteudo de duas variáveis x e y.
+
+public class Main{
+
+     public static void main(String []args){
+        int x = 1;
+        int y = 2;
+        int z;
+        z = x;
+		x = y;
+		y = z;
+        System.out.println(x + " " + y);
+     }
+
+}
+
+#2) Agora faca sem utilizar uma terceira variavel temporaria.
+public class Main{
+
+     public static void main(String []args){
+        int x = 1;
+        int y = 2;
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println(x + " " + y);
+     }
+     
+}
